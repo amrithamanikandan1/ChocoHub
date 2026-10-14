@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco Bliss - Chocolate Factory</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff8f0;
+            color: #3e2015;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #3e2015;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: #f5c16c;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f5c16c;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 480px;
+            background:
+                linear-gradient(
+                    rgba(40, 18, 10, 0.65),
+                    rgba(40, 18, 10, 0.65)
+                ),
+                url("https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #f5c16c;
+            color: #3e2015;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            transform: scale(1.05);
+        }
+
+        /* Common Sections */
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #5a2d1b;
+        }
+
+        .intro {
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Products */
+        .products {
+            background-color: #f5e6d3;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 18px 10px 10px;
+            color: #5a2d1b;
+        }
+
+        .product-card p {
+            padding: 0 18px 22px;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff8f0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #5a2d1b;
+            color: white;
+        }
+
+        .contact h2 {
+            color: #f5c16c;
+        }
+
+        .contact p {
+            line-height: 2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b160f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2 Choco Test></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to ChocoHub</h2>
+        <p>Discover the magical world of handcrafted chocolates!</p>
+        <a href="#products" class="btn">Explore Our Chocolates</a>
+    </section>
+
+    <!-- Products Section -->
+    <section href="products.html" class="products" id="products">
+        <h2>Our Delicious Chocolates</h2>
+        <p>Made with love, crafted with passion.</p>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80"
+                    alt="Rich dark chocolate">
+                <h3>Dark Chocolate</h3>
+                <p>Rich, smooth, and full of deep chocolate flavor.</p>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://www.cavasa.in/cdn/shop/files/pomelli_photoshoot_image_1_1_0602_11.jpg?v=1780402349"
+                    alt="Creamy milk chocolate">
+                <h3>Milk Chocolate</h3>
+                <p>A creamy, sweet treat for every chocolate lover.</p>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=700&q=80"
+                    alt="Assorted chocolate treats">
+                <h3>Chocolate Truffles</h3>
+                <p>Delicate chocolate bites made for special moments.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Our Factory</h2>
+
+        <p class="intro">
+            At Choco Bliss, we believe that chocolate makes every moment
+            sweeter. Our chocolate factory combines quality ingredients,
+            creativity, and care to create delicious chocolates for
+            everyone. From classic favorites to luxurious treats,
+            every piece is made to bring happiness to your day.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>
+            Have a sweet question? We would love to hear from you!
+            <br>
+            Email: hello@chocobliss.com
+            <br>
+            Phone: +91 98765 43210
+            <br>
+            Address: Choco Bliss Chocolate Factory, Kerala, India
+        </p>
+
+        <br>
+        <a href="mailto:hello@chocobliss.com" class="btn">
+            Send Us an Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Choco Bliss Chocolate Factory.
+            All Rights Reserved.
+        </p>
+        <p>Made with ❤️ and chocolate!</p>
+    </footer>
+
+</body>
+</html>
